@@ -1,0 +1,44 @@
+#logo { 
+	
+	color: beige;
+	font-family: verdana;
+	font-size: 40px;
+}
+
+header { 
+	background-color: grey;
+	padding: 20px 20px 20px 20px;
+	border: solid black 2px;
+	border-radius :20px;
+ }
+
+ #game { 
+ 	text-align:center;
+ 	margin:auto;
+ 	border:solid black 2px;
+ 	border-radius: 100%;
+  }
+
+  #hot { 
+  	color: orange;
+   }
+
+   #cold {
+   	color: aqua;
+   }
+
+   #textbox { 
+   	margin-bottom: 20px;
+    }
+
+    #submit { 
+    	color: teal;
+    	font-size: 35px;
+    	border-radius: 10px;
+     }
+
+     #again { 
+     	color: beige;
+     	font-size:20px;
+     	border-radius: 10px;
+      }
