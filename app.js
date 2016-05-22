@@ -1,3 +1,5 @@
+(function(){
+
 $(document).ready(function() { 
 
 	var playersGuess,
@@ -276,3 +278,5 @@ $(document).ready(function() {
 		
 	
 });
+
+}());
