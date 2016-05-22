@@ -1,32 +1,41 @@
-<!doctyle html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Guess The Number</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8">
+	<title>Guess The Number</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 	<div id="wrapper">
 		<header>
 			<h1 id='logo'>Guess The Number</h1>
 		</header>	
 
 		<div id="game">
-		<h2>Are you <em id="hot">Hot</em> or <em id="cold">Cold</em></h2>
+			<h2><span id="message">Are you <em class="hot">HOT</em> or <em class="cold">COLD</em></span></h2>
+			<button id='start'>Start Game</button>
+			<div id="gameBoard">
+				
+				<input id="textbox" type = "text" placeholder="1-100">
+				<br/>
+				<button id = "submit">Guess</button>
 
-		<form>
-		<input id="textbox" type = "text" placeholder="1-100">
-		<br/>
-		<button id = "submit">Submit</button>
-		<br/>
-		<br/>
-		<button id = "again">Play Again</button>
-		</form>
-
+				<br/>
+				<button id="hint">Hint?</button>
+				<br/>
+				
+				<span id="guessSpan">Past Guesses: </span> <ul id ="guessList"></ul>
+				<br/>
+				<span id= 'guessesLeft'>Guesses Left: <span id='numLeft'></span></span>
+				
+			</div>
+			<button id = "again">Play Again?</button> <!-- hidden at start -->
 
 		</div>
 
 
 	</div>
-	</body>
+	<script src ='jquery.min.js'></script>
+	<script src = 'app.js'></script>
+</body>
 </html>

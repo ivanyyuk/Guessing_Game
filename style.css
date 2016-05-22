@@ -1,44 +1,127 @@
+body { 
+background-color : #F3F3F3;
+ }
+
+#wrapper {
+  width: 40%;
+  align:center;
+  margin:auto;
+  background-color: #DEE7EF;
+  border: 3px solid #AB987A;
+  border-radius: 20px;
+
+
+}
+
 #logo { 
 	
-	color: beige;
+	color: #0F1626;
 	font-family: verdana;
 	font-size: 40px;
+  text-align: center;
+
 }
 
 header { 
-	background-color: grey;
-	padding: 20px 20px 20px 20px;
-	border: solid black 2px;
+	
+	padding: 10px 10px 10px 10px;
+
 	border-radius :20px;
  }
 
  #game { 
+
  	text-align:center;
- 	margin:auto;
- 	border:solid black 2px;
- 	border-radius: 100%;
+ 	margin-bottom: 20px;
+ 	/*border:solid #F3F3F3 2px;*/
+ 	border-radius: 30%;
+  padding-top: 20px;
+  padding-bottom : 20px;
+  font-family: verdana;
+  color:#0F1626;
   }
 
-  #hot { 
-  	color: orange;
+  #gameBoard { 
+    display : none;
    }
 
-   #cold {
-   	color: aqua;
+  .hot { 
+  	color: red;
+   }
+
+   .warm{
+    color: orange;
+   }
+
+   .cold {
+   	color: blue;
    }
 
    #textbox { 
    	margin-bottom: 20px;
+    font-size: 30px;
     }
 
+    #start{
+      border:none;
+      color:#0F1626;
+      font-size:20px;
+      border-radius: 4px;
+    }
     #submit { 
-    	color: teal;
-    	font-size: 35px;
+    	color: white;
+      background-color: green;
+    	font-size: 30px;
     	border-radius: 10px;
+      border:none;
+      margin-bottom:15px;
      }
+     #hint{
+      font-size:25px;
+      color:grey;
+      border:none;
+      background-color: azure;
+      border-radius:10px;
+
+     }
+    
+  #guessSpan{
+    font-size:14px;
+    float: left;
+    display:inline-block;
+    text-align:left;
+    display: none;
+     } 
+  
+   #guessList{
+    font-size:14px;
+    display: inline;
+    list-style: none;
+
+   }
+
+   #guessList li {
+    margin-right: 6px; 
+    float:left;
+
+   }
+
+   #guessesLeft{
+    font-size:14px;
+    float:left;
+    text-align: left;
+    display:none;
+   }
+
+   #numLeft{
+
+   }
 
      #again { 
      	color: beige;
      	font-size:20px;
      	border-radius: 10px;
+      border:none;
+      display: none;
+
       }
